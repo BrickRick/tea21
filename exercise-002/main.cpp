@@ -10,6 +10,9 @@ auto main(int argc, char **argv) -> int
      * CLI11 is a command line parser to add command line options
      * More info at https://github.com/CLIUtils/CLI11#usage
      */
+    std::int count = 20;
+    app.add_option("-c,--count", count, "A help integer");
+
     CLI::App app{PROJECT_NAME};
     try
     {
